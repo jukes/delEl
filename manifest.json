@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "DelEl",
+    "version": "0.1",
+    "permissions": [
+        "contextMenus",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "icons": {
+        "48": "icons/48.png"
+    }
+}
